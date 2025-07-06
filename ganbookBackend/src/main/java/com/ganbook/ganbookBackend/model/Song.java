@@ -22,6 +22,7 @@ public class Song {
     private boolean isFavorite;
     private String thumbnailUrl;
     private LocalDateTime addedOn;
+    private String driveLink;
 
     public long getSongID() {
         return songID;
@@ -95,6 +96,14 @@ public class Song {
         this.addedOn = addedOn;
     }
 
+    public String getDriveLink() {
+        return driveLink;
+    }
+
+    public void setDriveLink(String driveLink) {
+        this.driveLink = driveLink;
+    }
+
     @Override
     public String toString() {
         return "Song{" +
@@ -107,6 +116,7 @@ public class Song {
                 ", isFavorite=" + isFavorite +
                 ", thumbnailUrl='" + thumbnailUrl + '\'' +
                 ", addedOn=" + addedOn +
+                ", driveLink='" + driveLink + '\'' +
                 '}';
     }
 }
